@@ -37,3 +37,4 @@ export async function getProductById(id) {
     if (!res.ok) throw new Error("No se pudo cargar el producto");
     return await res.json();
   }
+  

@@ -10,11 +10,7 @@ const Carrito = ()=>{
     }
     const navigate =useNavigate();
     const total = carrito.reduce((acc,p)=>acc+p.precio,0);
-  /*   let total = 0;
 
-    for (let i = 0; i < carrito.length; i++) {
-    total += carrito[i].precio;
-    } */
     return(
         <div className={styles.carritoContainer}>
             <h2>Tú carrito de compra</h2>
@@ -31,7 +27,7 @@ const Carrito = ()=>{
             <p><strong>Total: {total.toFixed(2)} €</strong></p>
             <button className={styles.vaciarBtn} onClick={clearCarrito}>Vaciar carrito</button>
         </div>
-        <button className={styles.pagarBtn} onClick={() => navigate("/checkout")}/* alert("¡Gracias por tu compra!") */>Finalizar compra</button>
+        <button className={styles.pagarBtn} onClick={() => navigate("/checkout")}>Finalizar compra</button>
         </div>
     )
 }

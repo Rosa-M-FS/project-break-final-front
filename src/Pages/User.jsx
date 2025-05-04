@@ -8,7 +8,7 @@ const User=()=>{
   const [usuario, setUsuario] = useState(null);
 
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     const datos = localStorage.getItem("usuario");
     if (datos) {
