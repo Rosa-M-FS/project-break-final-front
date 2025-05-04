@@ -47,8 +47,15 @@
     cursor: pointer;
     font-size: 1.5rem;
     color: #d14c4c;
-    position: absolute;
+/*     position: absolute;
     top: 0.5rem;
-    right: 0.5rem;
+    right: 0.5rem; */
+    margin-left: 1rem;
+  }
+  .btnG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
   }
   

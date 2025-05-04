@@ -9,7 +9,7 @@ const ProductCard = ({producto})=>{
         typeof producto.precio === "number"
         ? producto.precio.toFixed(2) + " €"
         : "Sin precio";
-        
+
     const {addToCarrito}=useCarrito();
     const usuario = localStorage.getItem("token");
     const [mensaje, setMensaje] = useState("");
@@ -38,13 +38,15 @@ const ProductCard = ({producto})=>{
             </Link>
             {usuario && (
                 <>
-                <button onClick={handleAdd}className={styles.btnBuy}>
-                <span className="material-symbols-outlined">shopping_cart</span>
-                </button>
+                <div className={styles.btnG}>
+                    <button onClick={handleAdd}className={styles.btnBuy}>
+                    <span className="material-symbols-outlined">shopping_cart</span>
+                    </button>
 
-                <button onClick={handleAddWish} className={styles.btnWish}>
-                <span className="material-symbols-outlined">{inWishlist ? "favorite" : "favorite_border"}</span>
-                </button>  
+                    <button onClick={handleAddWish} className={styles.btnWish}>
+                    <span className="material-symbols-outlined">{inWishlist ? "favorite" : "favorite_border"}</span>
+                    </button>
+                </div>
                 </>
             )}
              {mensaje && <p className={styles.mensaje}>{mensaje}</p>}
