@@ -69,6 +69,7 @@ const Navbar = () => {
                 }
                 
             </div>
+            
 
             {menuOpen && (
                 <div className={styles.overlay} onClick={toggleMenu}>

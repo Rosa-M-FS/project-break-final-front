@@ -29,6 +29,7 @@ const WishlistProvider=({children})=>{
     )
 }
 
+
 const useWishlist=()=>{
     return useContext(WishlistContext);
 }
