@@ -12,14 +12,9 @@ const ProductDetail = ()=>{
     const {addToCarrito}=useCarrito();
     const [mensaje, setMensaje] = useState("");
 
-    const [usuario,setUsuario] = useState(localStorage.getItem("token"));
+    const usuario= localStorage.getItem("token");
 
     const navigate = useNavigate();
-    
-    useEffect(() => {
-        setUsuario(localStorage.getItem("token"));
-      }, []);
-      
 
     useEffect(() => {
         getProductById(id)

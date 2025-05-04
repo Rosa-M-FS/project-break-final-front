@@ -16,7 +16,8 @@ const Home = ()=>{
             <p>Aquí puedes encontrar productos hechos a mano con mucho cariño</p>
         </div>
         <h2 className={styles.sectionProducts}>Explora nuestros productos</h2>
-        
+        <Link to="/products" className={styles.linkAllProducts}>Ver todos los productos</Link>
+
         <div className={styles.productDash}>
             {categorias.map((category)=>(
                 <Link key={category.nombre}

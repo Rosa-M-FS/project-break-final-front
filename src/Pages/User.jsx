@@ -28,6 +28,7 @@ const User=()=>{
         <Link to="/carrito">Ver carrito</Link>
         <h3>Mis compras</h3>
         <p>Aquí podras ver tu historial de pedidos</p>
+        <button onClick={handleLogout} className={styles.linkBtnSalir}>Salir</button>
     </div>
   );
 };
