@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Wishlist.module.css"; 
 
 const Wishlist=()=> {
-  const { wishlist, removeFromWishlist } = useWishlist();
+  const { wishlist, deleteToWishlist } = useWishlist();
 
   if (wishlist.length === 0) {
     return (

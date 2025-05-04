@@ -9,6 +9,7 @@ const ProductCard = ({producto})=>{
         typeof producto.precio === "number"
         ? producto.precio.toFixed(2) + " €"
         : "Sin precio";
+        
     const {addToCarrito}=useCarrito();
     const usuario = localStorage.getItem("token");
     const [mensaje, setMensaje] = useState("");
