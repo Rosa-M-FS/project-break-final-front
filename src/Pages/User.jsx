@@ -4,6 +4,15 @@ import styles from "./User.module.css";
 import { useCarrito } from "../context/CarritoContext";
 import { Link } from "react-router-dom";
 
+const navigate = useNavigate();
+
+const handleLogout= () =>{
+    localStorage.removeItem("token");
+    localStorage.removeItem("usuario");
+    navigate("/");
+}
+
+
 const User=()=>{
   const [usuario, setUsuario] = useState(null);
 
