@@ -22,7 +22,8 @@ const Wishlist=()=> {
             <Link to={`/producto/${producto._id}`} className={styles.link}>
               {producto.nombre} - {producto.precio?.toFixed(2)} €
             </Link>
-            <button onClick={() => removeFromWishlist(producto._id)} className={styles.btnWishDel}>
+            
+            <button onClick={() => deleteToWishlist(producto._id)} className={styles.btnWishDel}>
             <span class="material-symbols-outlined">favorite</span>
             </button>
           </li>

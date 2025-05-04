@@ -10,7 +10,7 @@ const WishlistProvider=({children})=>{
         localStorage.setItem("wishlist",JSON.stringify(wishlist));
     },[wishlist]);
 
-    const addTowhislist = (producto)=>{
+    const addTowishlist = (producto)=>{
         if(!wishlist.some(p=>p._id === producto._id))
         setWishlist([...wishlist,producto]);
     }
@@ -23,7 +23,7 @@ const WishlistProvider=({children})=>{
     const isInWishlist = (productoId) => wishlist.some(p => p._id === productoId);
     
     return (
-        <WishlistContext.Provider value ={{wishlist,isInWishlist,addTowhislist,deleteToWishlist}}>
+        <WishlistContext.Provider value ={{wishlist,isInWishlist,addTowishlist,deleteToWishlist}}>
             {children}
         </WishlistContext.Provider>
     )

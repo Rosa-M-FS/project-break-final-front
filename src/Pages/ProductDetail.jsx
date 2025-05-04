@@ -64,7 +64,7 @@ const ProductDetail = ()=>{
                 </button>
                 
                 <button onClick={handleAddWish} className={styles.btnWish}>
-                <span className="material-symbols-outlined">favorite </span>
+                <span className="material-symbols-outlined"> {inWishlist ? "favorite" : "favorite_border"} </span>
                 </button>  
                 </>
             )}
