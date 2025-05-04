@@ -38,7 +38,6 @@ const ProductDetail = ()=>{
     if (loading) return <p>Cargando...</p>;
     if (!producto) return <p>No se encontró el producto.</p>;
 
-    const inWishlist = isInWishlist(producto._id);
     return(
         <div className={styles.detailProductContainer}>
             <button onClick={()=> navigate(-1)}className={styles.backBtn}>
@@ -64,9 +63,7 @@ const ProductDetail = ()=>{
                 </button>
                 
                 <button onClick={handleAddWish} className={styles.btnWish}>
-                <span className="material-symbols-outlined">
-                {inWishlist ? "favorite" : "favorite_border"}
-                </span>
+                <span className="material-symbols-outlined">favorite</span>
                 </button>  
                 </>
             )}

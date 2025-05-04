@@ -26,7 +26,6 @@ const ProductCard = ({producto})=>{
         setMensaje("¡Producto añadido a tu Wishlist!");
         setTimeout(() => setMensaje(""), 2000);
     };
-    const inWishlist = isInWishlist(producto._id);
 
     return(
         <div className={styles.productCardContainer}>
@@ -44,9 +43,7 @@ const ProductCard = ({producto})=>{
                     </button>
 
                     <button onClick={handleAddWish} className={styles.btnWish}>
-                    <span className="material-symbols-outlined">
-                    {inWishlist ? "favorite" : "favorite_border"}
-                    </span>
+                    <span className="material-symbols-outlined">favorite</span>
                     </button>
                 </div>
                 </>
