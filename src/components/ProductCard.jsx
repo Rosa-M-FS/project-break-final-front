@@ -37,7 +37,7 @@ const ProductCard = ({producto})=>{
             </Link>
             {usuario && (
                 <>
-                <button onClick={handleAdd}className="styles.btnBuy">
+                <button onClick={handleAdd}className={styles.btnBuy}>
                 <span className="material-symbols-outlined">shopping_cart</span>
                 </button>
 

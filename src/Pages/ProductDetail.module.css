@@ -62,9 +62,10 @@
   }
   .btnWish {
     background: none;
-    border: none;
+    border: 1px solid red;
     cursor: pointer;
     font-size: 1.8rem;
     color: #d33;
+    z-index: 1000;
   }
   
