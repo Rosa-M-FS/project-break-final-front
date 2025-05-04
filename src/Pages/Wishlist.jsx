@@ -24,7 +24,7 @@ const Wishlist=()=> {
             </Link>
             
             <button onClick={() => deleteToWishlist(producto._id)} className={styles.btnWishDel}>
-            <span class="material-symbols-outlined">favorite</span>
+            <span className="material-symbols-outlined">favorite</span>
             </button>
           </li>
         ))}
