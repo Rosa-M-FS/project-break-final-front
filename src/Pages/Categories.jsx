@@ -2,7 +2,7 @@ import { useEffect,useState } from "react";
 import {getCategory} from "../service/api";
 import ProductCard from "../components/ProductCard";
 import styles from "./Tienda.module.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const Category = ()=>{
     const {categoria} = useParams();

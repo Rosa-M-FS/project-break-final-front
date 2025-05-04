@@ -79,10 +79,10 @@ color: #32798d;
 
 .linkAllProducts {
   display: inline-block;
-  margin: 1rem auto;
-  font-size: 1.2rem;
+  margin: auto;
+  font-size: 1rem;
   color: #1095b6;
   text-align: center;
-  text-decoration: underline;
+  text-decoration:none;
   font-weight: 500;
 }
