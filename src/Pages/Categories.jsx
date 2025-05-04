@@ -24,9 +24,13 @@ const Category = ()=>{
         <div className={styles.tienda}>
             <h2>Productos de {categoria}</h2>
             <div className={styles.productosTienda}>
-                {productos.map(p=>(
+                {productos.length===0 ?(
+                    <p>Actualmente no hay productos disponibles en esta categoría</p>
+                ):(
+                productos.map(p=>(
                     <ProductCard key={p._id} producto={p}/>
-                ))}
+                ))
+            )}
             </div>
         </div>
     )

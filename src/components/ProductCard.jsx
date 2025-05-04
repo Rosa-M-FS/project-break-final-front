@@ -13,7 +13,7 @@ const ProductCard = ({producto})=>{
     const {addToCarrito}=useCarrito();
     const usuario = localStorage.getItem("token");
     const [mensaje, setMensaje] = useState("");
-    const { addToWishlist, isInWishlist } = useWishlist();
+    const { addToWishlist} = useWishlist();
 
     const handleAdd = () => {
         addToCarrito(producto);

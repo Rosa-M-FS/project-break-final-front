@@ -11,7 +11,7 @@ const ProductDetail = ()=>{
     const [loading, setLoading] = useState(true);
     const {addToCarrito}=useCarrito();
     const [mensaje, setMensaje] = useState("");
-    const {addToWishlist, isInWishlist}=useWishlist();
+    const {addToWishlist}=useWishlist();
 
     const usuario= localStorage.getItem("token");
 
