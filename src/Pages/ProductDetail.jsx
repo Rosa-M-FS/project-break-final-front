@@ -9,12 +9,18 @@ const ProductDetail = ()=>{
     const {id} = useParams();
     const [producto, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
-    const usuario = localStorage.getItem("token");
     const {addToCarrito}=useCarrito();
     const [mensaje, setMensaje] = useState("");
 
+    const [usuario,setUsuario] = useState(localStorage.getItem("token"));
+
     const navigate = useNavigate();
     
+    useEffect(() => {
+        setUsuario(localStorage.getItem("token"));
+      }, []);
+      
+
     useEffect(() => {
         getProductById(id)
           .then(setProduct)
@@ -45,7 +51,7 @@ const ProductDetail = ()=>{
             </b></p>
 
             {!usuario ?(
-                <p className={style.InitSesion}>
+                <p className={styles.InitSesion}>
                 Inicia sesión para comprar
                 </p>
             ):(

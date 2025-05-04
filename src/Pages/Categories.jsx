@@ -7,8 +7,8 @@ import { useParams } from "react-router-dom";
 const Category = ()=>{
     const {categoria} = useParams();
     const [productos,setProductos]=useState([]);
-    const[loading, setLoading]=useState(true);
-    const[error,setError]=useState("");
+    const [loading, setLoading]=useState(true);
+    const [error,setError]=useState("");
 
     useEffect(()=>{
         getCategory(categoria)
