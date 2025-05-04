@@ -41,4 +41,14 @@
     font-weight: bold;
     font-size: 1rem;
   }
+  .btnWish {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #d14c4c;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
   

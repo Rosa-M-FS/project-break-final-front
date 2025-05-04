@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getProductById } from "../service/api";
 import styles from './ProductDetail.module.css';
 import { useCarrito } from "../context/CarritoContext";
-
+import { useWishlist } from "../context/WishlistContext";
 
 const ProductDetail = ()=>{
     const {id} = useParams();
@@ -11,6 +11,7 @@ const ProductDetail = ()=>{
     const [loading, setLoading] = useState(true);
     const {addToCarrito}=useCarrito();
     const [mensaje, setMensaje] = useState("");
+    const {addToWishlist, isInWishlist}=useWishlist();
 
     const usuario= localStorage.getItem("token");
 
@@ -28,9 +29,16 @@ const ProductDetail = ()=>{
         setTimeout(() => setMensaje(""), 2000); 
     };
 
+    const handleAddWish = () => {
+        addToWishlist(producto);
+        setMensaje("¡Producto añadido a tu Wishlist!");
+        setTimeout(() => setMensaje(""), 2000);
+    };
+
     if (loading) return <p>Cargando...</p>;
     if (!producto) return <p>No se encontró el producto.</p>;
 
+    const inWishlist = isInWishlist(producto._id);
     return(
         <div className={styles.detailProductContainer}>
             <button onClick={()=> navigate(-1)}className={styles.backBtn}>
@@ -50,9 +58,15 @@ const ProductDetail = ()=>{
                 Inicia sesión para comprar
                 </p>
             ):(
+                <>
                 <button onClick={handleAdd} className={styles.btnBuy}>
                 <span className="material-symbols-outlined">shopping_cart</span>
                 </button>
+                
+                <button onClick={handleAddWish} className={styles.btnWish}>
+                <span className="material-symbols-outlined">{inWishlist ? "favorite" : "favorite_border"}</span>
+                </button>  
+                </>
             )}
 
             {mensaje && <p className={styles.mensaje}>{mensaje}</p>}

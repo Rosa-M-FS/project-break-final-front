@@ -60,3 +60,11 @@
     color: "#a12727";
     margin-top: "1rem" 
   }
+  .btnWish {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #d33;
+  }
+  

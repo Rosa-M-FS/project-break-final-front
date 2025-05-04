@@ -10,7 +10,7 @@ import './App.css'
 import Carrito from "./Pages/Carrito";
 import Checkout from "./Pages/Checkout";
 import User from "./Pages/User";
-
+import Wishlist from "./Pages/Wishlist";
 function App() {
 
   return (
@@ -26,6 +26,8 @@ function App() {
         <Route path="/carrito" element={<Carrito/>}/>
         <Route path="/user" element={<User/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/wishlist" element={<Wishlist />} />
+
 {/*         <Route path="/admin" element={<Admin />} /> */}
       </Routes>
     </>
