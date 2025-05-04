@@ -50,6 +50,7 @@ const Navbar = () => {
                 </div>
                 {usuario ? (
                         <>
+                            <Link to="/wishlist"className={styles.link}><span className="material-symbols-outlined">favorite</span></Link>
                             <Link to="/carrito" className={styles.link}>
                                 <span className="material-symbols-outlined">shopping_bag</span>
                                 {carrito.length > 0 && `(${carrito.length})`}
