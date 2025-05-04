@@ -4,18 +4,11 @@ import styles from "./User.module.css";
 import { useCarrito } from "../context/CarritoContext";
 import { Link } from "react-router-dom";
 
-const navigate = useNavigate();
-
-const handleLogout= () =>{
-    localStorage.removeItem("token");
-    localStorage.removeItem("usuario");
-    navigate("/");
-}
-
-
 const User=()=>{
   const [usuario, setUsuario] = useState(null);
 
+  const navigate = useNavigate();
+  
   useEffect(() => {
     const datos = localStorage.getItem("usuario");
     if (datos) {
@@ -23,6 +16,13 @@ const User=()=>{
     }
   }, []);
   
+
+  const handleLogout= () =>{
+      localStorage.removeItem("token");
+      localStorage.removeItem("usuario");
+      navigate("/");
+  }
+    
   if (!usuario) return <p>Debes iniciar sesión para ver tu perfil.</p>;
   const {carrito} = useCarrito();
   return (
