@@ -14,10 +14,13 @@
   }
   
   .pwish {
+    display: flex;
     margin-bottom: 2rem;
     padding: 1rem;
     background: #fff4d8;
     border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
   }
   
   h2 {
@@ -37,5 +40,6 @@
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    margin-left: 1rem;
   }
   
