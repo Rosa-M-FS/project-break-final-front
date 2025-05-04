@@ -1,0 +1,19 @@
+.tienda {
+    padding: 6rem 2rem 2rem 2rem; /* espacio arriba por navbar fijo */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tienda h2 {
+    color: #1095b6;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .productosTienda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+  }
+  

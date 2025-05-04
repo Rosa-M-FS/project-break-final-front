@@ -1,0 +1,36 @@
+.checkoutContainer {
+    max-width: 600px;
+    margin: 7rem auto 2rem auto;
+    text-align: center;
+    padding: 2rem;
+    background-color: #e1f3ff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkoutContainer h1 {
+    font-size: 2rem;
+    color: #1095b6;
+    margin-bottom: 1rem;
+  }
+  
+  .checkoutContainer p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .checkoutContainer button {
+    background-color: #1095b6;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+  
+  .checkoutContainer button:hover {
+    background-color: #0b7a92;
+  }
+  

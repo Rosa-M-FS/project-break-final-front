@@ -1,0 +1,20 @@
+.userContainer {
+    max-width: 600px;
+    margin: 6rem auto 2rem auto;
+    padding: 2rem;
+    background-color: #f7f9fb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .userContainer h2 {
+    color: #1095b6;
+    margin-bottom: 1rem;
+  }
+  
+  .userContainer p {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  

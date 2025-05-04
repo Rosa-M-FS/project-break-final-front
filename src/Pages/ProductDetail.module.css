@@ -1,0 +1,62 @@
+.detailProductContainer {
+    max-width: 800px;
+    margin: 7rem auto 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .detailProductContainer h2 {
+    font-size: 2rem;
+    color: #1095b6;
+    margin-bottom: 1rem;
+  }
+  
+  .detailProductContainer p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  
+  .detailProductContainer b {
+    color: #0a4f5f;
+  }
+  
+  .detailProductContainer img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .btnBuy {
+    margin-top: 1.5rem;
+    background-color: #1095b6;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .backBtn {
+    background: none;
+    border: none;
+    color: #1095b6;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .mensaje {
+    margin-top: 1rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .initSesion{
+    color: "#a12727";
+    margin-top: "1rem" 
+  }
